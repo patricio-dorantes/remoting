@@ -129,7 +129,7 @@ public class Main {
      * If both this options and {@link #workDir} is not set, the log will not be generated.
      * @since 3.8
      */
-    @Option(name="-agentLog", usage="Local agent error log destination (overrides workDir)")
+    @Option(name="-agentLog", aliases = {"-slaveLog"} ,usage="Local agent error log destination (overrides workDir)")
     @CheckForNull
     public File agentLog = null;
 
